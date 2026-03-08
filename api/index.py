@@ -1,8 +1,8 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from models import RouteRequest, RouteResponse, RouteSegment, CitiesResponse, CityInfo, AllRoutesResponse
-from planner import TravelPlanner
-from data import COORDS, ROUTES
+from .models import RouteRequest, RouteResponse, RouteSegment, CitiesResponse, CityInfo, AllRoutesResponse
+from .planner import TravelPlanner
+from .data import COORDS, ROUTES
 
 app = FastAPI(
     title="Pakistan Travel Planner API",

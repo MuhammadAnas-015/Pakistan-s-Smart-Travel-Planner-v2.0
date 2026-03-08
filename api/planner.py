@@ -1,5 +1,5 @@
-from graph import Graph
-from algorithms import dijkstra, bfs
+from .graph import Graph
+from .algorithms import dijkstra, bfs
 
 class TravelPlanner:
     def __init__(self):
