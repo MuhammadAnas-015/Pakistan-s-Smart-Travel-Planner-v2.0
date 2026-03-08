@@ -1,21 +1,27 @@
 # Quick Start Guide
 
-## 🚀 Running the Application
+## 🚀 Running the Application (Recommended)
+
+To start both the Backend (FastAPI) and Frontend (Next.js) with a single action:
+
+1.  **Double-click** `start.bat` in the project root.
+2.  Wait for the browser to open automatically at `http://localhost:3000`.
+
+---
+
+## 🛠️ Manual Startup (Terminal)
 
 ### Terminal 1: Backend (FastAPI)
 ```bash
 cd backend
-python -m uvicorn main:app --reload
+..\.venv\Scripts\python.exe -m uvicorn main:app --reload
 ```
-✅ Server running on `http://localhost:8000`
-📄 API docs available at `http://localhost:8000/docs`
 
 ### Terminal 2: Frontend (Next.js)
 ```bash
 cd frontend
 npm run dev
 ```
-✅ Application running on `http://localhost:3000`
 
 ## 🎯 Testing the App
 
