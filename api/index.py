@@ -1,5 +1,6 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from mangum import Mangum
 from .models import RouteRequest, RouteResponse, RouteSegment, CitiesResponse, CityInfo, AllRoutesResponse
 from .planner import TravelPlanner
 from .data import COORDS, ROUTES
@@ -120,3 +121,6 @@ async def get_all_routes():
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
+
+handler = Mangum(app)
+
